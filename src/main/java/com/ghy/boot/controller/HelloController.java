@@ -1,4 +1,4 @@
-package com.ghy.boot.Controller;
+package com.ghy.boot.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 /*@Controller

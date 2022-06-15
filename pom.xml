@@ -16,11 +16,21 @@
         <version>2.3.4.RELEASE</version>
     </parent>
 
+    <!--<properties>
+        <mysql.version>5.1.43</mysql.version>
+    </properties>-->
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!--mysql-->
+        <!--<dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>-->
     </dependencies>
 
     <!-- 打包的插件 -->
