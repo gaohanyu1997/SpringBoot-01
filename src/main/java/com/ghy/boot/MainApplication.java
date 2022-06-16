@@ -27,9 +27,11 @@ public class MainApplication {
         for (String s:names) {
             System.out.println(s);
         }
+        int beanCount = run.getBeanDefinitionCount();
+        System.out.println("组件："+beanCount);
 
         //3 从容器中获取组件
-        Pet tom01 = run.getBean("tom", Pet.class);
+        /*Pet tom01 = run.getBean("tom", Pet.class);
         Pet tom02 = run.getBean("tom", Pet.class);
         System.out.println("组件："+(tom01 == tom02));
 
@@ -57,7 +59,20 @@ public class MainApplication {
             System.out.println(s);
         }
         DBHelper dBHelper = run.getBean(DBHelper.class);
-        System.out.println(dBHelper);
+        System.out.println(dBHelper);*/
 
+        boolean tom = run.containsBean("tom");
+        System.out.println("容器中Tom组件："+tom);
+
+        boolean user01 = run.containsBean("user01");
+        System.out.println("容器中user01组件："+user01);
+
+        boolean tom2 = run.containsBean("tom2");
+        System.out.println("容器中tom2组件："+tom2);
+
+        boolean haha = run.containsBean("haha");
+        boolean hehe = run.containsBean("hehe");
+        System.out.println("容器中haha组件："+haha);
+        System.out.println("容器中hehe组件："+hehe);
     }
 }
